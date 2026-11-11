@@ -90,3 +90,39 @@ tr.pick td{background:var(--blue-wash)}
   th,td{padding:8px 7px}
   .hero h1{font-size:30px}
 }
+
+/* Hero revision mockup */
+.hero .wrap{position:relative}
+.hero-art img{width:100%;height:auto;display:block}
+.label-zoom{background:#fff;border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:8px;box-shadow:0 4px 14px rgba(20,23,26,.14);padding:10px 10px 8px}
+.label-zoom .lz-eyebrow{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:0 0 6px}
+.label-zoom img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+@media (min-width:960px){
+  .hero{min-height:672px}
+  .hero .wrap{padding-right:460px}
+  .hero-art{position:absolute;right:20px;top:36px;width:420px}
+  .label-zoom{position:absolute;right:-4px;bottom:-12px;width:212px}
+}
+@media (max-width:959px){
+  .hero .wrap{display:flex;flex-direction:column}
+  .hero-art{order:3;margin:20px auto 0;width:min(340px,88%);position:relative}
+  .label-zoom{position:static;margin:14px auto 0;width:min(300px,92%)}
+  .hero-cta{order:4;text-align:center}
+  .hero .verifyline{order:5;text-align:center}
+}
+/* Cycling sample address label (reused PrimoCans builder behavior) */
+.hero-art{container-type:inline-size}
+.bin-label{position:absolute;left:36.6%;top:35.5cqw;width:32.5%;height:13.31cqw;background:#fff;border:1px solid rgba(0,0,0,.3);box-shadow:0 1px 3px rgba(0,0,0,.28);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;font-family:Arial,Helvetica,sans-serif;color:#111}
+.bin-label .bl-num{font-size:6.6cqw;font-weight:800;letter-spacing:.01em}
+.bin-label .bl-street{font-size:2.6cqw;font-weight:700;margin-top:1cqw}
+.bin-label .bl-street.bl-long{font-size:2.2cqw}
+.bin-label .bl-brand{font-size:1.05cqw;font-weight:700}
+.label-zoom{container-type:inline-size}
+.lz-label{position:relative;width:100%;aspect-ratio:1200/520;padding-bottom:4.5cqw;box-sizing:border-box;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;font-family:Arial,Helvetica,sans-serif;color:#111}
+.lz-label .bl-num{font-size:24cqw;font-weight:800;letter-spacing:.01em}
+.lz-label .bl-street{font-size:8cqw;font-weight:700;margin-top:2cqw}
+.lz-label .bl-street.bl-long{font-size:6.8cqw}
+.lz-label .bl-brand{font-size:3.6cqw;font-weight:700}
+.bl-brand{position:absolute;bottom:5%}
+.bl-l{left:5%}
+.bl-r{right:5%}
